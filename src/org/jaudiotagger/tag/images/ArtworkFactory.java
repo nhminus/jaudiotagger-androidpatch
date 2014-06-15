@@ -17,12 +17,14 @@ public class ArtworkFactory
     public static Artwork getNew()
     {
         //Normal
+    	/*
         if(!TagOptionSingleton.getInstance().isAndroid())
         {
             return new StandardArtwork();
         }
         //Android
         else
+        */
         {
             return new AndroidArtwork();
         }
@@ -37,12 +39,14 @@ public class ArtworkFactory
     public static Artwork createArtworkFromMetadataBlockDataPicture(MetadataBlockDataPicture coverArt)
     {
         //Normal
+    	/*
         if(!TagOptionSingleton.getInstance().isAndroid())
         {
             return StandardArtwork.createArtworkFromMetadataBlockDataPicture(coverArt);
         }
         //Android
         else
+        */
         {
             return AndroidArtwork.createArtworkFromMetadataBlockDataPicture(coverArt);
         }
@@ -58,12 +62,14 @@ public class ArtworkFactory
     public static Artwork createArtworkFromFile(File file) throws IOException
     {
         //Normal
+    	/*
         if(!TagOptionSingleton.getInstance().isAndroid())
         {
             return StandardArtwork.createArtworkFromFile(file);
         }
         //Android
         else
+        */
         {
             return AndroidArtwork.createArtworkFromFile(file);
         }
@@ -79,12 +85,14 @@ public class ArtworkFactory
     public static Artwork createLinkedArtworkFromURL(String link) throws IOException
     {
         //Normal
+    	/*
         if(!TagOptionSingleton.getInstance().isAndroid())
         {
             return StandardArtwork.createLinkedArtworkFromURL(link);
         }
         //Android
         else
+        */
         {
             return AndroidArtwork.createLinkedArtworkFromURL(link);
         }
